@@ -3,13 +3,13 @@ import "../global.css"
 const {title} = Astro.props;
 ---
 
-<html lang="en">
+<html class="bg-contours" lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>{title}</title>
   </head>
-  <body class="bg-base-200 bg-contours">
+  <body class="bg-contours">
     <slot />
   </body>
 </html>
