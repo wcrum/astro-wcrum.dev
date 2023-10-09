@@ -1,0 +1,38 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Icon } from "astro-icon/components";
+---
+
+<Layout title="Crummy Request">
+  <div class="flex flex-col min-h-screen">
+    <main class="flex-grow">
+      <div class="hero mt-52">
+        <div class="hero-content text-center">
+          <div>
+            <h1 class="text-5xl font-bold">Not all those who wander are lost. Except you.</h1>
+            <div class="pt-5">
+              <a href="/">
+                <button class="btn btn-outline">
+                  <Icon class="text-[32px]" name="tabler:rv-truck"></Icon>Go home!</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="sticky bottom-0 m-5">
+      <div class="flex items-center justify-between">
+        <div>
+          <a href="mailto:will@wcrum.dev"
+          ><h2 class="font-semibold">Contact Me</h2></a
+          >
+        </div>
+        <div>
+          <a href="https://github.com/sponsors/wcrum">
+            <Icon class="text-[52px]" name="line-md:coffee-loop" />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</Layout>
