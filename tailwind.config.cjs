@@ -7,5 +7,5 @@ module.exports = {
         'contours': "url('/public/contours.png')",
       }
     }
-  }
+  },
 };
