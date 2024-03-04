@@ -4,7 +4,7 @@ import { Icon } from "astro-icon/components";
 
 let items=`
 <li><a>Home</a></li>
-<li><a>About</a></li>
+<li><a>Meet</a></li>
 <li><a>Github</a></li>
 <li><a>LinkedIn</a></li>
 `
@@ -20,18 +20,17 @@ let items=`
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
       </label>
       <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-		<li><a><Icon class="text-[24px]" name="mdi:home" />Home</a></li>
-		<li><a><Icon class="text-[24px]" name="mdi:information-outline" />About</a></li>
-		<li><a><Icon class="text-[24px]" name="mdi:github" />Github</a></li>
-		<li><a><Icon class="text-[24px]" name="mdi:linkedin" />LinkedIn</a></li>
+		<li><a href="/"> <Icon class="text-[24px]" name="mdi:home" />Home</a></li>
+		<li><a href="https://calendly.com/wcrum"><Icon class="text-[24px]" name="mdi:calendar-month" />Meet</a></li>
+		<li><a href="https://github.com/wcrum"><Icon class="text-[24px]" name="mdi:github" />Github</a></li>
+		<li><a href="https://www.linkedin.com/in/william-crum-usmc/"><Icon class="text-[24px]" name="mdi:linkedin" />LinkedIn</a></li>
       </ul>
     </div>
-    <a class="btn btn-ghost normal-case text-xl"></a>
   </div>
   <div class="navbar-center hidden lg:flex bg-white dark:bg-transparent rounded-box">
     <ul class="menu menu-horizontal px-1">
 		<li><a href="/"><Icon class="text-[24px]" name="mdi:home" />Home</a></li>
-		<li><a href="/about"><Icon class="text-[24px]" name="mdi:information-outline" />About</a></li>
+		<li><a href="https://calendly.com/wcrum"><Icon class="text-[24px]" name="mdi:calendar-month" />Meet</a></li>
 		<li><a href="https://github.com/wcrum"><Icon class="text-[24px]" name="mdi:github" />Github</a></li>
 		<li><a href="https://www.linkedin.com/in/william-crum-usmc/"><Icon class="text-[24px]" name="mdi:linkedin" />LinkedIn</a></li>
     </ul>
