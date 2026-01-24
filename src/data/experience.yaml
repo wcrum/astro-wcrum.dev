@@ -2,6 +2,22 @@
 # Add company logos to public/logos/ folder
 
 experience:
+  - company: "CNCF Public Sector User Group"
+    title: "Co-Chair"
+    timeframe: "Jan 2025 - Present"
+    icon: "mdi:account-group"
+    logo: /cncf.png  # Add: "/logos/cncf.png"
+    description: >
+      Co-chairing the Cloud Native Computing Foundation Public Sector User Group, 
+      fostering collaboration and knowledge sharing among public sector organizations 
+      adopting cloud native technologies.
+    tags:
+      - CNCF
+      - Kubernetes
+      - Cloud Native
+      - Public Sector
+      - Community
+
   - company: "Spectro Cloud"
     title: "Senior Defense Success Engineer"
     timeframe: "May 2024 - Present"
@@ -75,19 +91,16 @@ experience:
       - PostgreSQL
       - AWS Lambda
 
-  - company: "US Marine Corps | Innovation Team"
-    title: "Software Engineer"
-    timeframe: "May 2021 - Aug 2021"
+  - company: "US Marine Corps"
+    title: "Data Systems Administrator"
+    timeframe: "July 2019 - August 2023"
     icon: "mdi:lightbulb-outline"
-    logo: null  # Add: "/logos/usmc.png"
+    logo: /usmc.png  # Add: "/logos/usmc.png"
     description: >
-      Primary backend developer for the winning Marine Corps first Inaugural Micro Application Innovation Challenge.
     tags:
-      - Python
-      - Flask
-      - React
-      - MySQL
-      - Tanzu
+      - Server Administration
+      - IT Operations
+      - Tactical Data Links
 
 # Certificates - linked to Credly
 certificates:
