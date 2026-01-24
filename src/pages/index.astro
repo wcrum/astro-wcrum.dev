@@ -21,18 +21,20 @@ let items=`
       </label>
       <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
 		<li><a href="/"> <Icon class="text-[24px]" name="mdi:home" />Home</a></li>
-		<li><a href="https://calendly.com/wcrum"><Icon class="text-[24px]" name="mdi:calendar-month" />Meet</a></li>
+		<li><a href="https://meet.wcrum.dev"><Icon class="text-[24px]" name="mdi:calendar-month" />Meet</a></li>
+		<li><a href="/about"><Icon class="text-[24px]" name="mdi:account-clock" />About</a></li>
 		<li><a href="https://github.com/wcrum"><Icon class="text-[24px]" name="mdi:github" />Github</a></li>
-		<li><a href="https://www.linkedin.com/in/william-crum-usmc/"><Icon class="text-[24px]" name="mdi:linkedin" />LinkedIn</a></li>
+		<li><a href="https://www.linkedin.com/in/wcrum/"><Icon class="text-[24px]" name="mdi:linkedin" />LinkedIn</a></li>
       </ul>
     </div>
   </div>
   <div class="navbar-center hidden lg:flex bg-white dark:bg-transparent rounded-box">
-    <ul class="menu menu-horizontal px-1">
+    <ul class="menu menu-horizontal px-1 gap-2">
 		<li><a href="/"><Icon class="text-[24px]" name="mdi:home" />Home</a></li>
 		<li><a href="https://meet.wcrum.dev"><Icon class="text-[24px]" name="mdi:calendar-month" />Meet</a></li>
+		<li><a href="/about"><Icon class="text-[24px]" name="mdi:account-clock" />About</a></li>
 		<li><a href="https://github.com/wcrum"><Icon class="text-[24px]" name="mdi:github" />Github</a></li>
-		<li><a href="https://www.linkedin.com/in/william-crum-usmc/"><Icon class="text-[24px]" name="mdi:linkedin" />LinkedIn</a></li>
+		<li><a href="https://www.linkedin.com/in/wcrum/"><Icon class="text-[24px]" name="mdi:linkedin" />LinkedIn</a></li>
     </ul>
   </div>
   <div class="navbar-end">
@@ -44,7 +46,7 @@ let items=`
         <div class="hero-content flex-col lg:flex-row">
           <div class="avatar">
             <div class="w-60 rounded">
-              <img src="/me.jpg" />
+              <img src="/20240124_082707~2.jpg" />
             </div>
           </div>
           <div>
@@ -60,7 +62,7 @@ let items=`
               <p class="text-center lg:text-left max-w-xl py-4">
                 Passionate individiual with demonstrated experience of Software
                 Development and Machine Learning at the tactical edge in the
-                Department of Defense.
+                Department of War.
               </p>
             </div>
           </div>
@@ -113,7 +115,8 @@ const theme = (() => {
     localStorage.setItem("theme", isDark ? "dark" : "light");
   };
 
-  document
-    .getElementById("themeToggle")
-    .addEventListener("click", handleToggleClick);
+  const themeToggle = document.getElementById("themeToggle");
+  if (themeToggle) {
+    themeToggle.addEventListener("click", handleToggleClick);
+  }
 </script>
