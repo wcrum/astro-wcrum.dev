@@ -88,3 +88,17 @@ experience:
       - React
       - MySQL
       - Tanzu
+
+# Certificates - linked to Credly
+certificates:
+  - name: "Speaker: KubeCon + CloudNativeCon North America 2025"
+    image: "/speaker-kubecon-cloudnativecon-north-america-2025.png"
+    url: "https://www.credly.com/badges/eed2a765-d4bd-4ed4-8f4b-812fe98dd82e/public_url"
+
+  - name: "Speaker: Open Source Summit North America 2025"
+    image: "/speaker-open-source-summit-north-america-2025.png"
+    url: "https://www.credly.com/badges/1108dae5-ae41-4113-9b96-154d6bacf6b7/public_url"
+
+  - name: "KCNA: Kubernetes and Cloud Native Associate"
+    image: "/kcna-kubernetes-and-cloud-native-associate.png"
+    url: "https://www.credly.com/badges/aa3b33ff-e7c5-4666-8c1d-96b19ca41ac5/public_url"
