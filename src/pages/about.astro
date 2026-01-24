@@ -32,7 +32,7 @@ const certificates = data.certificates || [];
     </div>
   </div>
   <div class="navbar-center hidden lg:flex bg-white dark:bg-transparent rounded-box">
-    <ul class="menu menu-horizontal px-1">
+    <ul class="menu menu-horizontal px-1 gap-2">
 		<li><a href="/"><Icon class="text-[24px]" name="mdi:home" />Home</a></li>
 		<li><a href="https://meet.wcrum.dev"><Icon class="text-[24px]" name="mdi:calendar-month" />Meet</a></li>
 		<li><a href="/about"><Icon class="text-[24px]" name="mdi:account-clock" />About</a></li>
@@ -51,13 +51,15 @@ const certificates = data.certificates || [];
           <h2 class="text-4xl font-bold text-center mb-16">Experience</h2>
           
           <!-- Timeline Container -->
-          <div class="relative">
+          <div class="relative timeline-container">
             <!-- Vertical Line -->
             <div class="absolute left-8 top-0 bottom-0 w-0.5 bg-base-300"></div>
+            <!-- Timeline Glow -->
+            <div class="timeline-glow absolute left-8 pointer-events-none" style="top: 0; opacity: 0;"></div>
             
             {experience.map((job: any) => (
               <div class="timeline-item opacity-0 translate-y-8 transition-all duration-700 ease-out mb-16 lg:mb-24">
-                <div class="flex items-start gap-6">
+                <div class="flex items-center gap-6">
                   <!-- Timeline Dot -->
                   <div class="flex-shrink-0 z-10 w-16 flex justify-center">
                     <div class="w-4 h-4 rounded-full bg-base-content border-4 border-base-100 shadow-lg"></div>
@@ -228,6 +230,51 @@ const theme = (() => {
       glowBorder.style.background = 'transparent';
     });
   });
+
+  // Timeline vertical line glow effect - follows scroll
+  const timelineContainer = document.querySelector('.timeline-container');
+  const timelineGlow = document.querySelector('.timeline-glow');
+  
+  if (timelineContainer && timelineGlow) {
+    const updateTimelineGlow = () => {
+      const rect = timelineContainer.getBoundingClientRect();
+      const viewportCenter = window.innerHeight / 2;
+      const containerTop = rect.top;
+      const containerBottom = rect.bottom;
+      
+      // Calculate position relative to timeline container
+      const glowPosition = viewportCenter - containerTop;
+      
+      // Check if timeline is in view
+      const isInView = containerTop < viewportCenter && containerBottom > viewportCenter;
+      
+      const isDarkMode = document.documentElement.classList.contains('dark');
+      const glowColor = isDarkMode 
+        ? 'rgba(255, 255, 255, 1)' 
+        : 'rgba(30, 30, 30, 1)';
+      
+      if (isInView) {
+        timelineGlow.style.opacity = '1';
+        timelineGlow.style.top = `${glowPosition - 100}px`;
+        timelineGlow.style.background = `linear-gradient(
+          to bottom,
+          transparent 0%,
+          ${glowColor} 30%,
+          ${glowColor} 70%,
+          transparent 100%
+        )`;
+      } else {
+        timelineGlow.style.opacity = '0';
+      }
+    };
+    
+    // Update on scroll and resize
+    window.addEventListener('scroll', updateTimelineGlow);
+    window.addEventListener('resize', updateTimelineGlow);
+    
+    // Initial update
+    updateTimelineGlow();
+  }
 </script>
 
 <style>
@@ -249,5 +296,12 @@ const theme = (() => {
   
   .glow-card:hover > div:last-child {
     box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .timeline-glow {
+    height: 200px;
+    transition: opacity 0.2s ease;
+    width: 3px;
+    margin-left: -1px;
   }
 </style>
