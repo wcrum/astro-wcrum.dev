@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'contours': "url('/public/contours.png')",
+        'contours': "url('/contours.png')",
       }
     }
   },

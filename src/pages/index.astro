@@ -21,9 +21,10 @@ let items=`
       </label>
       <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
 		<li><a href="/"> <Icon class="text-[24px]" name="mdi:home" />Home</a></li>
-		<li><a href="https://calendly.com/wcrum"><Icon class="text-[24px]" name="mdi:calendar-month" />Meet</a></li>
+		<li><a href="https://meet.wcrum.dev"><Icon class="text-[24px]" name="mdi:calendar-month" />Meet</a></li>
+		<li><a href="/about"><Icon class="text-[24px]" name="mdi:account-clock" />About</a></li>
 		<li><a href="https://github.com/wcrum"><Icon class="text-[24px]" name="mdi:github" />Github</a></li>
-		<li><a href="https://www.linkedin.com/in/william-crum-usmc/"><Icon class="text-[24px]" name="mdi:linkedin" />LinkedIn</a></li>
+		<li><a href="https://www.linkedin.com/in/wcrum/"><Icon class="text-[24px]" name="mdi:linkedin" />LinkedIn</a></li>
       </ul>
     </div>
   </div>
@@ -31,8 +32,9 @@ let items=`
     <ul class="menu menu-horizontal px-1">
 		<li><a href="/"><Icon class="text-[24px]" name="mdi:home" />Home</a></li>
 		<li><a href="https://meet.wcrum.dev"><Icon class="text-[24px]" name="mdi:calendar-month" />Meet</a></li>
+		<li><a href="/about"><Icon class="text-[24px]" name="mdi:account-clock" />About</a></li>
 		<li><a href="https://github.com/wcrum"><Icon class="text-[24px]" name="mdi:github" />Github</a></li>
-		<li><a href="https://www.linkedin.com/in/william-crum-usmc/"><Icon class="text-[24px]" name="mdi:linkedin" />LinkedIn</a></li>
+		<li><a href="https://www.linkedin.com/in/wcrum/"><Icon class="text-[24px]" name="mdi:linkedin" />LinkedIn</a></li>
     </ul>
   </div>
   <div class="navbar-end">
@@ -113,7 +115,8 @@ const theme = (() => {
     localStorage.setItem("theme", isDark ? "dark" : "light");
   };
 
-  document
-    .getElementById("themeToggle")
-    .addEventListener("click", handleToggleClick);
+  const themeToggle = document.getElementById("themeToggle");
+  if (themeToggle) {
+    themeToggle.addEventListener("click", handleToggleClick);
+  }
 </script>

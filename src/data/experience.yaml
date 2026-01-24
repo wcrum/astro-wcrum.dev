@@ -1,0 +1,90 @@
+# Experience Timeline Data
+# Add company logos to public/logos/ folder
+
+experience:
+  - company: "Spectro Cloud"
+    title: "Senior Defense Success Engineer"
+    timeframe: "May 2024 - Present"
+    icon: "mdi:cloud-outline"
+    logo: /spectrocloud.png  # Add: "/logos/spectrocloud.png"
+    description: >
+      Spearheaded public sector customer success from $0 to primary Engineer for 9 key accounts totaling over $8M ARR. 
+      Led comprehensive product trainings and developed custom self-service training architecture. 
+      Bridged critical communication gaps between executives, product teams, and customers.
+    tags:
+      - Kubernetes
+      - Go
+      - AWS
+      - Azure
+      - Edge
+      - Airgapped
+
+  - company: "Spectro Cloud"
+    title: "Software Engineer"
+    timeframe: "Jul 2023 - May 2024"
+    icon: "mdi:cloud-outline"
+    logo: /spectrocloud.png
+    description: >
+      First Spectro Cloud Public Sector focused Software Engineer. 
+      Developed solutions and architecture to ensure compatibility and success within mission-critical environments.
+      Quickly promoted to spearhead Customer Success for Public Sector customers.
+    tags:
+      - Go
+      - Kubernetes
+      - Public Sector
+
+  - company: "Marine Innovation Unit (Reserves)"
+    title: "Software Engineer"
+    timeframe: "Jun 2023 - Aug 2025"
+    icon: "mdi:anchor"
+    logo: /miu-light.png  # Add: "/logos/usmc.png"
+    description: >
+      Work with Marines to technically enable them on Reserve Engagements. 
+      Work closely with senior leaders to develop applications for the warfighter.
+    tags:
+      - Software Development
+      - Leadership
+
+  - company: "13th Marine Expeditionary Unit"
+    title: "Data Systems NCOIC"
+    timeframe: "Mar 2022 - Jun 2023 | Deployed"
+    icon: "mdi:shield-star"
+    logo: /13th-meu.png  # Add: "/logos/usmc.png"
+    description: >
+      13th MEU / Navy Information War Center / AWS. 
+      Supervised 14 personnel providing domain services and security for 2,000+ users. 
+      Spearheaded custom scripts and solutions for domain management. 
+      Directed integration of commercial radar systems into tactical data links.
+    tags:
+      - Leadership
+      - Security
+      - AWS
+      - Tactical Systems
+
+  - company: "Defense Digital Services"
+    title: "Volunteer Software Engineer"
+    timeframe: "Aug 2021 - Feb 2022"
+    icon: "mdi:flag"
+    logo: /dds.png  # Add: "/logos/dds.png"
+    description: >
+      Voluntarily developed solutions for Project Rabbit, enabling employers to upload and verify 
+      Afghan employees seeking asylum in the U.S. during the Afghanistan extraction in August 2021.
+    tags:
+      - Python
+      - FastAPI
+      - PostgreSQL
+      - AWS Lambda
+
+  - company: "US Marine Corps | Innovation Team"
+    title: "Software Engineer"
+    timeframe: "May 2021 - Aug 2021"
+    icon: "mdi:lightbulb-outline"
+    logo: null  # Add: "/logos/usmc.png"
+    description: >
+      Primary backend developer for the winning Marine Corps first Inaugural Micro Application Innovation Challenge.
+    tags:
+      - Python
+      - Flask
+      - React
+      - MySQL
+      - Tanzu
