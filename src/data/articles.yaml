@@ -1,0 +1,21 @@
+# Articles / featured reads
+# First item is the primary (featured) article card
+
+articles:
+  - title: "Public Sector Software Supply Chain Whitepaper"
+    url: "https://www.cncf.io/reports/public-sector-software-supply-chain-whitepaper/"
+    image: /cncf-pubsec-whitepaper.png
+    source: "CNCF Public Sector User Group"
+    description: "Addressing current and future challenges of securing the public sector software supply chain, with solutions for open source and government systems."
+
+  - title: "Virtual Machines at the cloud-native tactical edge"
+    url: "https://www.spectrocloud.com/blog/virtual-machines-at-the-cloud-native-tactical-edge"
+    image: /spectrocloud-vm-blog.png
+    source: "Spectro Cloud"
+    description: "Running legacy VMs and cloud-native containerized applications side-by-side at the tactical edge with VMO and Palette."
+
+  - title: "Securing Software Supply Chains for the Public Good"
+    url: "https://ossna2025.sched.com/event/1zfnX/securing-software-supply-chains-for-the-public-good-daniel-moch-lockheed-martin-william-crum-spectrocloud"
+    image: /oss-na-software-supply-chain.png
+    source: "Open Source Summit North America"
+    description: "Daniel Moch (Lockheed Martin) & William Crum (Spectro Cloud) at OSS NA on securing software supply chains for the public good."
