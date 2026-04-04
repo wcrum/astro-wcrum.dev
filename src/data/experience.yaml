@@ -117,7 +117,7 @@ experience:
 # Certificates - linked to Credly
 certificates:
   - name: "Speaker: KubeCon + CloudNativeCon Europe 2026"
-    image: "/speaker-kubecon-cloudnativecon-europe-2026"
+    image: "/speaker-kubecon-cloudnativecon-europe-2026.png"
     url: "https://www.credly.com/badges/c30d7d45-d010-4396-a2ea-93e6f592564d/public_url"
 
 
